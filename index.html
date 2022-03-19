@@ -23,18 +23,123 @@
 <body>
   <X3D class="fondo">
 <Scene>
- <Transform >
-    <Transform DEF='Arco'>
-    <inline DEF="ArcoB" url="arco.x3d"></inline>
-     </Transform>
-    
-     <Transform translation='8 0 0'><Shape USE='ArcoB' /></Transform>
-    <Transform translation='16 0 0'><Shape USE='ArcoB' /> </Transform>
-    <Transform translation='24 0 0'><Shape USE='ArcoB' /> </Transform>
-    <Transform translation='32 0 0'><Shape USE='ArcoB' /> </Transform>
-    <Transform translation='40 0 0'><Shape USE='ArcoB' /> </Transform>
+<Transform DEF='PlantaBaja'>
+    <Transform DEF='Fila'>
+        <Transform DEF='Arco'><inline DEF="ArcoB" url="arco.x3d"></inline></Transform>
+        
+        <Transform translation='8 0 0'><Shape USE='ArcoB'/></Transform>
+        <Transform translation='16 0 0'><Shape USE='ArcoB'/> </Transform>
+        <Transform translation='24 0 0'><Shape USE='ArcoB'/> </Transform>
+        <Transform translation='32 0 0'><Shape USE='ArcoB'/> </Transform>
+        <Transform translation='40 0 0'><Shape USE='ArcoB'/> </Transform>
+    </Transform>
+
+    <Transform translation='0 0 32'>
+      <Transform DEF='Fila'>
+        <Transform DEF='Arco'><inline DEF="ArcoB" url="arco.x3d"></inline></Transform>
+        
+        <Transform translation='8 0 0'><Shape USE='ArcoB'/></Transform>
+        <Transform translation='16 0 0'><Shape USE='ArcoB'/> </Transform>
+        <Transform translation='24 0 0'><Shape USE='ArcoB'/> </Transform>
+        <Transform translation='32 0 0'><Shape USE='ArcoB'/> </Transform>
+        <Transform translation='40 0 0'><Shape USE='ArcoB'/> </Transform>
+      </Transform>
+    </Transform>
+
+    <Transform rotation='0 1 0 1.57' translation='6 0 37'>
+      <Transform DEF='Fila'>
+        <Transform DEF='Arco'><inline DEF="ArcoB" url="arco.x3d"></inline></Transform>
+        
+        <Transform translation='8 0 0'><Shape USE='ArcoB'/></Transform>
+        <Transform translation='16 0 0'><Shape USE='ArcoB'/> </Transform>
+        <Transform translation='24 0 0'><Shape USE='ArcoB'/> </Transform>
+        <Transform translation='32 0 0'><Shape USE='ArcoB'/> </Transform>
+        <Transform translation='40 0 0'><Shape USE='ArcoB'/> </Transform>
+      </Transform>
+    </Transform>
+
+    <Transform rotation='0 1 0 1.57' translation='36 0 37'>
+      <Transform DEF='Fila'>
+        <Transform DEF='Arco'><inline DEF="ArcoB" url="arco.x3d"></inline></Transform>
+        
+        <Transform translation='8 0 0'><Shape USE='ArcoB'/></Transform>
+        <Transform translation='16 0 0'><Shape USE='ArcoB'/> </Transform>
+        <Transform translation='24 0 0'><Shape USE='ArcoB'/> </Transform>
+        <Transform translation='32 0 0'><Shape USE='ArcoB'/> </Transform>
+        <Transform translation='40 0 0'><Shape USE='ArcoB'/> </Transform>
+      </Transform>
+    </Transform>
+</Transform>
+
+<Transform DEF='PlantaAlta' translation='0 9 0'>
+  <Transform DEF='Fila'>
+      <Transform DEF='Arco'><inline DEF="ArcoB" url="arco.x3d"></inline></Transform>
+      
+      <Transform translation='8 0 0'><Shape USE='ArcoB'/></Transform>
+      <Transform translation='16 0 0'><Shape USE='ArcoB'/> </Transform>
+      <Transform translation='24 0 0'><Shape USE='ArcoB'/> </Transform>
+      <Transform translation='32 0 0'><Shape USE='ArcoB'/> </Transform>
+      <Transform translation='40 0 0'><Shape USE='ArcoB'/> </Transform>
+  </Transform>
+
+  <Transform translation='0 0 32'>
+    <Transform DEF='Fila'>
+      <Transform DEF='Arco'><inline DEF="ArcoB" url="arco.x3d"></inline></Transform>
+      
+      <Transform translation='8 0 0'><Shape USE='ArcoB'/></Transform>
+      <Transform translation='16 0 0'><Shape USE='ArcoB'/> </Transform>
+      <Transform translation='24 0 0'><Shape USE='ArcoB'/> </Transform>
+      <Transform translation='32 0 0'><Shape USE='ArcoB'/> </Transform>
+      <Transform translation='40 0 0'><Shape USE='ArcoB'/> </Transform>
+    </Transform>
+  </Transform>
+
+  <Transform rotation='0 1 0 1.57' translation='6 0 37'>
+    <Transform DEF='Fila'>
+      <Transform DEF='Arco'><inline DEF="ArcoB" url="arco.x3d"></inline></Transform>
+      
+      <Transform translation='8 0 0'><Shape USE='ArcoB'/></Transform>
+      <Transform translation='16 0 0'><Shape USE='ArcoB'/> </Transform>
+      <Transform translation='24 0 0'><Shape USE='ArcoB'/> </Transform>
+      <Transform translation='32 0 0'><Shape USE='ArcoB'/> </Transform>
+      <Transform translation='40 0 0'><Shape USE='ArcoB'/> </Transform>
+    </Transform>
+  </Transform>
+
+  <Transform rotation='0 1 0 1.57' translation='36 0 37'>
+    <Transform DEF='Fila'>
+      <Transform DEF='Arco'><inline DEF="ArcoB" url="arco.x3d"></inline></Transform>
+      
+      <Transform translation='8 0 0'><Shape USE='ArcoB'/></Transform>
+      <Transform translation='16 0 0'><Shape USE='ArcoB'/> </Transform>
+      <Transform translation='24 0 0'><Shape USE='ArcoB'/> </Transform>
+      <Transform translation='32 0 0'><Shape USE='ArcoB'/> </Transform>
+      <Transform translation='40 0 0'><Shape USE='ArcoB'/> </Transform>
+    </Transform>
+  </Transform>
+</Transform>
+
+
+<!-- Suelo -->
+
+<Transform rotation="1 0 0 1.57" translation='20 -5.5 20'>
+  <Shape>
+    <Appearance>
+      <ImageTexture url="img/piso.jpg"></ImageTexture>
+      <TextureTransform scale="10, 10"></TextureTransform>
+    </Appearance>
+    <Box size="80 80 1"></Box>
+  </Shape>
 
 </Transform>
+
+<!-- Fondo de color -->
+
+<Background
+skyColor="0.21 0.18 0.66, 0.2 0.44 0.85, 0.51 0.81 0.95, 0.77 0.80 0.82"
+skyAngle="0.5 1.5 1.57"
+groundColor="0.6 0.7 0.1, 0.4 0.7 0.2, 0.1 0.6 0.1, 0 0.3 0.1"
+groundAngle="0.9 1.5 1.57"></Background>
 
 </Scene>
   </X3D>  
